@@ -10,3 +10,9 @@ If the array contains the numbers: [1, 2, 3, 5, 6]
 Then the missing number is 4.
 
 """
+n = int(input("Total Numbers (n): "))
+arr = list(map(int, input("Enter Array (space-separated): ").split()))
+e_sum = n * (n + 1) // 2
+a_sum = sum(arr)
+missing_num = e_sum - a_sum
+print("The missing number is:", missing_num)
