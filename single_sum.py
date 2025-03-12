@@ -21,11 +21,11 @@ Example
 
 """
 
-def digital_root(n):
+def digit_sum(n):
     while n >= 10:
         n = sum(int(digit) for digit in str(n))
     return n
 
 num = int(input("Enter a number: "))
-result = digital_root(num)
+result = digit_sum(num)
 print("Output:", result)
